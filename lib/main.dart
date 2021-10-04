@@ -12,20 +12,29 @@ void main() {
         ),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          // *** circle image avatar
-          
-          // Image(image: AssetImage("images/samrat.jpg"),),
+          // *images section
+          Stack(
+            // alignment: Alignment.bottomCenter,
+            children: <Widget>[
+              Image.asset('images/cover.jpg'),
 
-          CircleAvatar(
-            radius: 80.0,
-            backgroundImage: AssetImage('images/samrat1.jpg'),
+              // *** circle image avatar
+              Padding(
+                padding: const EdgeInsets.only(left: 120, top: 100),
+                child: CircleAvatar(
+                  radius: 80.0,
+                  backgroundImage: AssetImage('images/samrat1.jpg'),
+                ),
+              ),
+            ],
           ),
+          // *** cover images
 
           // *** title or name
 
-          Container( 
+          Container(
             child: Center(
               child: Text(
                 'Sheikh Md Asaduzzaman',
@@ -107,7 +116,7 @@ void main() {
             ),
           ),
           Container(
-            height: 70.0,
+            height: 40.0,
             width: 400.0,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -130,7 +139,7 @@ void main() {
                 ),
                 SizedBox(
                   child: Container(
-                    width: 0.2,
+                    width: 0.3,
                     color: Colors.black,
                   ),
                 ),
