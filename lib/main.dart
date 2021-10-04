@@ -14,14 +14,25 @@ void main() {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
+          // *** description
+          Padding(
+            padding:
+                const EdgeInsets.only(left: 25, right: 25, top: 5, bottom: 5),
+            child: Container(
+              child: Center(
+                child: Text(
+                  'An average software engineer currently working on Mobile Application platforms and also have great enthusiasm for Data Science.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black54,
+                    wordSpacing: 2,
+                  ),
+                ),
+              ),
+            ),
+          ),
 
-      // *** description
-          
-
-
-
-
-      // *** contact information***
+          // *** contact information***
 
           Container(
             height: 70.0,
