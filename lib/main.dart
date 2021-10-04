@@ -14,6 +14,21 @@ void main() {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
+          // *** title or name
+
+          Container(
+            child: Center(
+              child: Text(
+                'Sheikh Md Asaduzzaman',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black54,
+                  fontSize: 22,
+                ),
+              ),
+            ),
+          ),
+
           // *** description
           Padding(
             padding:
