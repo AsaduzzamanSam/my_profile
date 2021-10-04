@@ -14,9 +14,18 @@ void main() {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
+          // *** circle image avatar
+          
+          // Image(image: AssetImage("images/samrat.jpg"),),
+
+          CircleAvatar(
+            radius: 80.0,
+            backgroundImage: AssetImage('images/samrat1.jpg'),
+          ),
+
           // *** title or name
 
-          Container(
+          Container( 
             child: Center(
               child: Text(
                 'Sheikh Md Asaduzzaman',
