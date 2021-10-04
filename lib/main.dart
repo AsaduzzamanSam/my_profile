@@ -15,7 +15,13 @@ void main() {
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
 
-// *** contact information***
+      // *** description
+          
+
+
+
+
+      // *** contact information***
 
           Container(
             height: 70.0,
@@ -24,32 +30,31 @@ void main() {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Expanded(
-                  child: Column(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      // Center(
-                      //   child: Text(
-                      //     '8,100',
-                      //     style: TextStyle(fontWeight: FontWeight.bold),
-                      //   ),
-                      // ),
+                      Center(
+                        child: Icon(
+                          Icons.location_on,
+                          size: 30.0,
+                        ),
+                      ),
                       Center(
                         child: Text('Location'),
                       ),
                     ],
                   ),
                 ),
-               
                 Expanded(
-                  child: Column(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // Center(
-                      //   child: Text(
-                      //     '2,100',
-                      //     style: TextStyle(fontWeight: FontWeight.bold),
-                      //   ),
-                      // ),
+                      Center(
+                        child: Icon(
+                          Icons.email,
+                          size: 30.0,
+                        ),
+                      ),
                       Center(child: Text('Send E-mail')),
                     ],
                   ),
@@ -57,8 +62,6 @@ void main() {
               ],
             ),
           ),
-
-
 
           // ***followers and following counter
 
